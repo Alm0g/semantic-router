@@ -185,6 +185,7 @@ class RouteLayer:
         top_k: int = 5,
         aggregation: str = "sum",
     ):
+        print("Initializing RouteLayer")
         self.index: BaseIndex = index if index is not None else LocalIndex()
         if encoder is None:
             logger.warning(
